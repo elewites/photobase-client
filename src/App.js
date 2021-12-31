@@ -12,8 +12,9 @@ function App() {
   const [loading, setLoading] = useState(true);
 
   //MODIFIES: image, loading
-  //EFFECTS: makes get request to /get-random-image-url,
-  //         sets image to response, and updates loading state
+  //EFFECTS: makes get request to /get-random-image-url to get a new 
+  //         image url,
+  //         sets image state to response, and updates loading state
   const updatePhoto = async () => {
     setLoading(true);
     //
@@ -23,7 +24,9 @@ function App() {
       );
       setImage(response.data);
       console.log(response.data);
-      //
+      //loading state is delayed by 1 second
+      //this allows for loading animation to always render
+      //when api response is fetched to quickly
       setTimeout(() => {
         setLoading(false);
       }, 1000);
