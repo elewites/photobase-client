@@ -1,38 +1,128 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
+body {
   background-color: #282c34;
-  min-height: 100vh;
+  height: 100%;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 10px;
+  margin-bottom: 30px;
+
+  width: 400px;
+  height: 100vh;
 }
 
-@keyframes App-logo-spin {
-  from {
+.image-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+}
+
+p {
+  width: 700px;
+}
+
+img {
+  height: 80%;
+  border: 1px solid #282c34;
+  border-radius: 10px;
+
+  transition-duration: 5ms;
+  transition: ease-in-out;
+}
+
+.button-div {
+  height: 50px;
+  width: 180px;
+  margin-bottom: 5px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  width: 170px;
+  height: 35px;
+  font-weight: bold;
+  border: 1px solid #282c34;
+  border-radius: 10px;
+  color: #282c34;
+  background-color: aliceblue;
+  transition-duration: 0.4s;
+}
+
+button:hover {
+  background-color: #282c34;
+  color: aliceblue;
+  border: 2px solid aliceblue;
+  height: 36px;
+  width: 171px;
+}
+
+.loader {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
     transform: rotate(0deg);
   }
-  to {
+  100% {
     transform: rotate(360deg);
+  }
+}
+
+.fade-appear {
+  opacity: 0;
+  z-index: 1;
+}
+
+.fade-appear.fade-appear-active {
+  opacity: 1;
+  transition: opacity 300ms linear;
+}
+
+@media only screen and (min-width: 600px) {
+  .App {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 10px;
+    margin-bottom: 30px;
+
+    width: 100%;
+    height: 100vh;
+  }
+
+  .image-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+  }
+
+  img {
+    height: 90%;
+    border: 1px solid #282c34;
+    border-radius: 10px;
+
+    transition-duration: 5ms;
+    transition: ease-in-out;
   }
 }
