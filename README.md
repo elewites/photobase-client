@@ -8,18 +8,18 @@ The app is deployed with Netlify and can be accesed here: [Photobase]().
 
 # Purpose
 
-I made this app as a gift for my friends. I wanted to compile all the special moments we have shared over the past years, and so I started by gathering as much photographs of us as I could. 
+I made this app as a gift for my friends. I wanted to compile all the special moments we have shared over the past years, and so I started by gathering as much photographs of us as I could.
 
-Then, created a REST API to handle the data processing on the backend and then made this client side application. The project turned out to be a great way to practice the skills I love and to share them with those who I love the most
+Then, created a REST API to handle the data processing on the backend and after made this client side application. The project turned out to be a great way to practice the skills I love and to share them with those who I love the most.
 
 ## Installation
 
-The app is already deployed so you can play around with the final product using this [link](https://crypt0-app.netlify.app/).
+The app is already deployed so you can play around with the final product using this [link]().
 
 If you wish to run the app locally, clone this repo and install the dependencies.
 
 ```
-$ git clone https://github.com/elewites/CryptoApp.git
+$ git clone https://github.com/elewites/photobase-client.git
 $ cd cryptoapp
 $ npm install
 ```
@@ -45,10 +45,12 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 # User Stories
 
-### These user stories I always create when I am designing a new app. They help me format the app's end goals and systematically work through the app design process
+### These user stories I always create when I am designing a new app. 
 
-1. The user should be able to click a button to generate a new random image. 
+### They help me systematically work through the design process.
 
-2. Upon refresh the user should see a new image being displayed. 
+1. The user should be able to click the random photo button to generate a new random image.
 
-3. The user should be able to dowload the displayed image as JPEG file
+2. Upon refresh the user should see a new image being displayed.
+
+3. The user should be able to dowload the displayed image as JPEG file.

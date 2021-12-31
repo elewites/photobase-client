@@ -12,7 +12,7 @@ function App() {
   const [loading, setLoading] = useState(true);
 
   //MODIFIES: image, loading
-  //EFFECTS: makes get request to /get-random-image-url to get a new 
+  //EFFECTS: makes get request to /get-random-image-url to get a new
   //         image url,
   //         sets image state to response, and updates loading state
   const updatePhoto = async () => {
@@ -53,7 +53,11 @@ function App() {
         </button>
       </div>
       <div className="image-div">
-        {loading ? <div class="loader"></div> : <img alt={1} src={image}></img>}
+        {loading ? (
+          <div className="loader"></div>
+        ) : (
+          <img alt={1} src={image}></img>
+        )}
       </div>
     </div>
   );
